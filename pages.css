@@ -1,0 +1,133 @@
+@media (max-width: 768px) {
+  :root {
+    font-size: 14px;
+  }
+}
+:root {
+  font-size: 16px;
+}
+
+body {
+  font-family: dubai;
+  color: #000;
+  background-color: #f5f5dc;
+  padding: 0;
+  margin: 0;
+  font-size: 1.2rem;
+}
+.cabecalho {
+  background-image: url(datas/Clinica_BG2.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: auto;
+  height: auto;
+}
+
+.brasao-cabecalho {
+  display: flex;
+  justify-content: left;
+}
+.brasao-cabecalho img {
+  width: 250px;
+}
+
+/*Menu de cima*/
+.dp-menu ul {
+  display: flex;
+  justify-content: center;
+  background-color: #165c7d;
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+
+.dp-menu ul li {
+  display: inline;
+  position: relative;
+  margin: 0 2em 0 2em;
+  padding: 1em;
+}
+.dp-menu ul li a {
+  color: #dadada;
+  text-decoration: none;
+  text-align: center;
+}
+.dp-menu ul li a:hover {
+  color: #000;
+  transition: 0.3s;
+}
+
+.dp-menu ul ul {
+  display: none;
+  position: absolute;
+  width: 150px;
+  left: 1;
+}
+
+.dp-menu ul li:hover ul {
+  display: block;
+}
+
+.dp-menu ul ul li a {
+  display: block;
+}
+
+h1 {
+  font-size: 2rem;
+}
+.maintext h4 {
+  text-align: center;
+  font-size: 2rem;
+  color: #283576;
+}
+.maintext p {
+  color: #000;
+  font-family: arial;
+  font-size: 20px;
+  padding: 0 8em 0 8em;
+}
+
+/* Rodapé */
+ul li {
+  margin: 0 2em 0 2em;
+}
+ul li a {
+  color: #dadada;
+  text-decoration: none;
+}
+ul li a:hover {
+  color: #000000;
+  transition: 0.3s;
+}
+
+.rodape-inner {
+  display: flex;
+  flex-wrap: nowrap;
+  justify-content: space-evenly;
+  font-size: 18px;
+}
+
+.rodape {
+  color: #ffffff;
+  background-color: #165c7d;
+}
+.rodape-inner ul {
+  list-style: none;
+  align-items: center;
+  padding: 0 4em 0 4em;
+}
+.rodape-inner ul li {
+  display: flex;
+  list-style: none;
+  padding: 3px 0 0 0;
+  justify-content: center;
+}
+.rodape-titulo {
+  font-size: 24px;
+  text-align: center;
+  color: #000000;
+  margin-bottom: auto;
+}
+a:link {
+  text-decoration: none;
+}

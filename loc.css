@@ -16,6 +16,7 @@ body {
   font-size: 1.2rem;
 }
 .cabecalho {
+  background-position: bottom center;
   background-image: url(datas/Clinica_BG2.png);
   background-repeat: no-repeat;
   background-size: cover;
@@ -25,10 +26,10 @@ body {
 
 .brasao-cabecalho {
   display: flex;
-  justify-content: left;
+  justify-content: right;
 }
 .brasao-cabecalho img {
-  width: 250px;
+  width: 265px;
 }
 
 /*Menu de cima*/
@@ -39,6 +40,7 @@ body {
   list-style-type: none;
   padding: 0;
   margin: 0;
+  z-index: 1;
 }
 
 .dp-menu ul li {
@@ -56,7 +58,9 @@ body {
   color: #000;
   transition: 0.3s;
 }
-
+.dp-menu .agendamento a:hover{
+  color:#dadada;
+}
 .dp-menu ul ul {
   display: none;
   position: absolute;
@@ -72,16 +76,35 @@ body {
   display: block;
 }
 
+.agendamento {
+  justify-content: center;
+  background-color: #179929;
+  border-style: solid;
+  border-color: #dadada;
+  padding: 12px;
+  border-width: 1px;
+  border-radius: 6px 6px 6px 6px;
+}
+/* Dropdown */
+.dp-menu .dropdown:hover {
+  .dp {
+    color: #000;
+    transition: 0.3s;
+  }
+}
+/* Clinica */
+.Clinica img{
+  border: 2px solid #000;
+  width: 60%;
+  position: relative;
+  border-radius: 50%;
+}
 h1 {
   font-size: 2rem;
 }
-.maintext img {
-  width: 60%;
-  display: absolute;
-  border-radius: 100%;
-  border: 2px solid #000;
+.maintext {
+  text-align: center;
 }
-
 .maintext h4 {
   text-align: center;
   font-size: 2rem;
@@ -95,28 +118,25 @@ h1 {
 }
 
 /* Rodapé */
-ul li {
-  margin: 0 2em 0 2em;
-}
 ul li a {
   color: #dadada;
   text-decoration: none;
 }
-ul li a:hover {
+.rodape-inner ul li a:hover {
   color: #000000;
   transition: 0.3s;
 }
-
 .rodape-inner {
   display: flex;
   flex-wrap: nowrap;
   justify-content: space-evenly;
   font-size: 18px;
 }
-
-.rodape {
-  color: #ffffff;
-  background-color: #165c7d;
+.rodape-titulo {
+  font-size: 24px;
+  text-align: center;
+  color: #000000;
+  margin-bottom: auto;
 }
 .rodape-inner ul {
   list-style: none;
@@ -129,11 +149,9 @@ ul li a:hover {
   padding: 3px 0 0 0;
   justify-content: center;
 }
-.rodape-titulo {
-  font-size: 24px;
-  text-align: center;
-  color: #000000;
-  margin-bottom: auto;
+.rodape {
+  color: #ffffff;
+  background-color: #165c7d;
 }
 a:link {
   text-decoration: none;

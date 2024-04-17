@@ -1,12 +1,3 @@
-@media (max-width: 768px) {
-  :root {
-    font-size: 14px;
-  }
-}
-:root {
-  font-size: 16px;
-}
-
 body {
   font-family: dubai;
   color: #000;
@@ -36,6 +27,8 @@ body {
 .dp-menu ul {
   display: flex;
   justify-content: center;
+  align-items: center;
+  flex-wrap: nowrap;
   background-color: #165c7d;
   list-style-type: none;
   padding: 0;
@@ -46,7 +39,7 @@ body {
   display: inline;
   position: relative;
   margin: 0 2em 0 2em;
-  padding: 1em;
+  padding: 1rem;
 }
 .dp-menu ul li a {
   color: #dadada;
@@ -76,6 +69,7 @@ body {
 }
 .agendamento {
   justify-content: center;
+  display: flex;
   background-color: #179929;
   border-style: solid;
   border-color: #dadada;

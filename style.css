@@ -144,3 +144,44 @@ ul li a {
 a:link {
   text-decoration: none;
 }
+.images_rino {
+  display: inline-flex;
+  align-items: center;
+  position:relative;
+  width: 125vh;
+  margin: 3em 0 -4em 0;
+  left:50%;
+  transform:translate(-50%,-50%);
+}
+
+.images {
+  height: 25vh;
+  border: 1px solid black;
+  transition-duration: 1s;
+  animation-timing-function: ease-in-out;
+  flex-grow: 1;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+}
+
+.images:hover {
+  flex-grow: 2;
+}
+
+#div1{
+  background-color: aqua;
+  background-image: url(datas/rino1.jpg);
+}
+#div2{
+  background-color: red;
+  background-image: url(datas/rino2.jpg);
+}
+#div3{
+  background-color: greenyellow;
+  background-image: url(datas/rino3.jpg);
+}
+#div4{
+  background-color: purple;
+  background-image: url(datas/rino4.jpg);
+}
